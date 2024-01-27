@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skyindya.dwsupervisor2.MainActivity">
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorAccent"
+        android:enabled="false"
+        android:text="See Map"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="About"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/vendorplans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/seePlans"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorAccent"
+        android:text="See Plans"
+        android:enabled="false"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/seePlans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:text="Post Recca \nPlans"
+        android:enabled="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

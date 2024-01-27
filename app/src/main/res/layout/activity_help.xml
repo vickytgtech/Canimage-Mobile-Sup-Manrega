@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skyindya.dwsupervisor2.HelpActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:id="@+id/title"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/version"
+        android:text="@string/version"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/address"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPort"
+        android:text="Port:99"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/version"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAppInfo"
+        android:text="App Info : Special For Supervisor"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txtPort"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Help"
+        android:textStyle="bold"
+        android:text="@string/help"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/txtAppInfo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/step1"
+        android:text="@string/step1text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Help"/>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:id="@+id/step1image"
+        android:src="@drawable/seeplansup"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/step1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/step2"
+        android:text="@string/step2text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/step1image"/>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:id="@+id/step2image"
+        android:src="@drawable/postreccaplan"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/step2"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/step3"
+        android:text="@string/step3text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/step2image"/>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:id="@+id/step3image"
+        android:src="@drawable/executepostrecca"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/step3"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
+</ScrollView>

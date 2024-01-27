@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skyindya.dwsupervisor2.PendingListActivity">
+
+    <EditText
+        android:id="@+id/villageCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/srchBtn"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:text=""
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/srchBtn"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorAccent"
+        android:text="@string/search"
+        android:textColor="@color/white" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listTable"
+        android:layout_below="@+id/srchBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Village Code"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Village Name"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="CD Block"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="Balance"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/border"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Action"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textStyle="bold" />-->
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+</ScrollView>

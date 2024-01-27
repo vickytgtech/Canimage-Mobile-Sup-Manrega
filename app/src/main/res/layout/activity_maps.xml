@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skyindya.dwsupervisor2.MapsActivity" />
+
+    <EditText
+        android:id="@+id/printNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/srchBtn"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/srchBtn"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorAccent"
+        android:text="@string/search"
+        android:textColor="@color/white" />
+</RelativeLayout>

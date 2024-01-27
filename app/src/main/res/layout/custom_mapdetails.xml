@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/imageTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        tools:ignore="MissingConstraints">
+
+        <TableRow>
+
+
+            <TextView
+
+
+                android:id="@+id/maptitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black">
+            </TextView>
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+
+
+                android:id="@+id/AllInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black">
+            </TextView>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent" android:orientation="vertical" tools:ignore="MissingConstraints">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:id="@+id/maptitle"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            android:textColor="@color/black">-->
+<!--        </TextView>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:id="@+id/AllInfo"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            android:textColor="@color/black">-->
+<!--        </TextView>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

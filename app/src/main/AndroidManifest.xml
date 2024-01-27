@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skyindya.dwsupervisor2">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.skyindya.dwsupervisor2.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.skyindya.dwsupervisor2.PendingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.skyindya.dwsupervisor2.HelpActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.skyindya.dwsupervisor2.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.skyindya.dwsupervisor2.ExecuteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.skyindya.dwsupervisor2.ArtworkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.skyindya.dwsupervisor2.VendorUserPendingPlans"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.skyindya.dwsupervisor2.MyService"
+            android:process=":my_service" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.skyindya.dwsupervisor2.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.skyindya.dwsupervisor2.SyncActivity"></activity>
+
+
+        <!--Brahma start-->
+        <activity
+            android:name="com.skyindya.dwsupervisor2.ViewPostReccaImg"
+            android:screenOrientation="portrait" />
+
+
+        <!--end-->
+    </application>
+
+</manifest>

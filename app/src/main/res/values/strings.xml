@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">4WI DWP S</string>
+    <string name="sync">Sync</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="plans">Plans</string>
+    <string name="title">CAN IMAGE MEDIA TECH</string>
+    <string name="version">Version : 1.4</string>
+    <string name="address">Address : Plot no. 53, S.no. 66, \n
+    H no. 1, Village : Waliv, \n Tal. : Vasai(East), Dist. : Palghar - 401208.\n
+    Website : www.canimagemediatech.com</string>
+    <string name="help">Help : </string>
+    <string name="step1text">1: Procedure to see plans.</string>
+    <string name="step2text">2: Procedure to see post recca plans.</string>
+    <string name="step3text">3: Procedure to Execute post recca plan.</string>
+    <string name="reload_plans">Reload plans</string>
+    <string name="search">Search</string>
+    <string name="imei">864054043957937</string>
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.skyindya.dwsupervisor2.ExecuteActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Remarks"
+            android:id="@+id/selectremark"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:textSize="16sp"
+            android:layout_alignBottom="@+id/datatable"
+            android:layout_margin="10dp"/>
+        <TableLayout
+            android:id="@+id/datatable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/villagelabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Village Name"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/villageName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/brandlabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Brand"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/brand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/sizelabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Size"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/width"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/printnolabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Print No."
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/printNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:inputType="textCapCharacters"
+                    android:textSize="16sp"/>
+            </TableRow>
+
+            <TableRow>
+
+                <com.skyindya.dwsupervisor2.MultiSelectionSpinner
+                    android:id="@+id/remark"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/remark"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:inputType="textCapCharacters"-->
+                    <!--android:hint="Enter remark"-->
+                    <!--android:textSize="16sp">-->
+                    <!--<requestFocus/>-->
+                    <!--</EditText>-->
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TableLayout
+            android:id="@+id/imageTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datatable"
+            android:layout_margin="10dp">
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/nearPic"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey" />
+
+                <ImageView
+                    android:id="@+id/farPic"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Near view"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Road view"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:layout_below="@id/imageTable"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+</ScrollView>
